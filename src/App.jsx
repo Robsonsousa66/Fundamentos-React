@@ -4,10 +4,28 @@ import Primeiro from './components/primeiro'
 import ComParamentro from './components/ComParamentro';
 import ComFilhos from './components/ComFilhos'
 import Card from './components/layout/Card'
+import Repeticao from './components/Repeticao'
+import Condisional from './components/Condisional'
+import CondisionalIf from './components/CondisionalIf'
 // eslint-disable-next-line import/no-anonymous-default-export
-export default props =>
+export default (props) =>
   <div className='App'>
-  <Card titulo="#03 - Componente com Filhos">
+    <Card titulo="#06 - Condisional com IF">
+      <CondisionalIf numero={7}>
+
+      </CondisionalIf>
+    </Card>
+    <Card titulo="#05 - Condisional">
+      <Condisional numero={10}>
+
+      </Condisional>
+    </Card>
+    <Card titulo="#04 - Repetição">
+      <Repeticao>
+
+      </Repeticao>
+    </Card>
+    <Card titulo="#03 - Componente com Filhos">
     <ComFilhos>
       <ul>
         <li>Ana</li>
@@ -23,5 +41,5 @@ export default props =>
   <Card titulo="#01- Primeiro Componente">
     <Primeiro/>
   </Card>
-  {/*  */}
-  </div>
+  
+ </div>
